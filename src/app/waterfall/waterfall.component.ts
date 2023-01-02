@@ -30,7 +30,7 @@ export class WaterfallComponent implements OnInit {
         autoScale: true
       });
 
-    //this.websocket.getEmitter().subscribe((data) => this.processEvent(data))
+    this.websocket.getEmitter().subscribe((data) => this.processEvent(data))
 
 
     window.addEventListener("keydown", (e) => this.spectrum?.onKeypress(e));
